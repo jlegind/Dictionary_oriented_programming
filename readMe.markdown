@@ -9,7 +9,7 @@ So far nothing special (you might say we could do this with a class), but think 
 This can be implemented as an element is the dict - 'previouslength' = len(dict.values()) at the previous step. 'currentlength': len(dict.values())  
 The rule can be written as if dict['previouslength'] > dict['currentlength']: raise Error ...
 
-You could also add a log for each step of the record creation process:  
+You could also add a log for each step of the record creation process. The log is INSIDE the record:  
 `{'id'; 13579, 'fname': 'Kristoffer', ..., 'log':`  
 
                                               {'getcustomerid_step': ...,                                                
