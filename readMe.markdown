@@ -10,13 +10,13 @@ This can be implemented as an element is the dict - 'previouslength' = len(dict.
 The rule can be written as if dict['previouslength'] > dict['currentlength']: raise Error ...
 
 You could also add a log for each step of the record creation process:  
-`{'id'; 13579 , 'fname': 'Kristoffer' , ..., 'log': {` 
+`{'id'; 13579, 'fname': 'Kristoffer', ..., 'log':`  
 
-                                              'getcustomerid_step': ...,                                                
+                                              {'getcustomerid_step': ...,                                                
                                               'getshoppingbasketcontent_step': ...',  
                                               ...
                                               }  
-                                              }  
+                                              }`
                                               
 So instead of being stuck in a soup of OO object instance reference crap, I suggest using a tool like "Shared" ( https://pypi.org/project/shared/ ) - this allows us to reference an object, let's say a JSON doc, from anywhere in the code base. Like so:  
 
